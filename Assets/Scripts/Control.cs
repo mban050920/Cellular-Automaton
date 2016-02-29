@@ -11,11 +11,12 @@ public class Control : MonoBehaviour {
     Cell[,] CellScripts=new Cell[X,Y];
     // Use this for initialization
     void Start() {
+        Static.Play = false;
         if (Static.Fast) {
             Application.targetFrameRate = 45;
         }
         else {
-            Application.targetFrameRate = 15;
+            Application.targetFrameRate = 8;
         }
         for (int i = 0; i < X; i++) {
             for (int j = 0; j < Y; j++) {
