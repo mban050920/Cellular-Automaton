@@ -6,7 +6,7 @@ public class Control : MonoBehaviour {
     const int Y = 36;
     [SerializeField]
     GameObject CellPrefab;
-    GameObject[,] Cell = new GameObject[X, Y];
+    public GameObject[,] Cell = new GameObject[X, Y];
     SpriteRenderer SpriteRenderer;
     Cell[,] CellScripts=new Cell[X,Y];
     // Use this for initialization
